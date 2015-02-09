@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/imagineux/gestalt/issues"
   },
-  "homepage": "https://github.com/imagineux/gestalt"
+  "homepage": "https://github.com/imagineux/gestalt",
+  "peerDependencies": {
+    "of-proximity": "0.1.0"
+  }
 }
