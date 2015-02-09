@@ -1,0 +1,19 @@
+{
+  "name": "gestalt",
+  "version": "0.1.0",
+  "description": "",
+  "main": "gestalt.less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imagineux/gestalt.git"
+  },
+  "author": "Matthew Van Dusen <imagineux@g.gmail.com> (imagineux.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imagineux/gestalt/issues"
+  },
+  "homepage": "https://github.com/imagineux/gestalt"
+}
