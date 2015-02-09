@@ -1,0 +1,10 @@
+// todo task to add version
+
+// TABLE OF MIXINS:
+// selection
+
+.selection(...) {
+  @process: ~`(function(e){function r(r,t){var a="}\n",c=n.split(","),u=(c[1]||"")+t+"{"+c[0]+a;"start"==r?e="0; } \n"+u:"startend"==r?e="0; } \n"+u.replace(a,""):e+="end"==r?u.replace(a,""):u}e=e||8121991;var t="@{state}",n=e;if(8121991==e)return e;switch(t){case"1":r("start","::selection"),r("end","::-moz-selection");break;case"2":r("startend","::selection");break;case"3":r("startend","::-moz-selection")}return e=e.replace(/;$/g,"")})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @state: 1; gestalt-selector { -g-property: @process; }
+
+}

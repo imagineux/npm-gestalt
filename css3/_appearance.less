@@ -1,0 +1,12 @@
+// todo task to add version
+
+// TABLE OF MIXINS:
+	// appearance
+
+
+.appearance(...) {
+  @process: ~`(function(r){return r||"none"})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+  -webkit-appearance: @process;
+  -moz-appearance: @process;
+  appearance: @process;
+}

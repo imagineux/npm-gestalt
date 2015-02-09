@@ -1,0 +1,19 @@
+// todo task to add version
+
+// TABLE OF MIXINS:
+	// perspective
+	// perspective-origin
+
+.perspective(...) {
+  @process: ~`(function(e){e=e||"none";var r=/\d/gi,t=/(?:\s|^)(\.?\d+\.?\d*)(?![^(]*\)|\w|%|\.)/gi;return r.test(e)&&(e=e.replace(t,function(e){return 0==e&&e||e+"px"})),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-perspective: @process;
+  -moz-perspective: @process;
+  perspective: @process;
+}
+
+.perspective-origin(...) {
+  @process: ~`(function(e){e=e||"50% 50%";var r=/\d/gi,t=/(?:\s|^)(\.?\d+\.?\d*)(?![^(]*\)|\w|%|\.)/gi;return/^[^, ]*,/.test(e)&&(e=e.replace(/(?:,)(?![^(]*\))/g,"")),r.test(e)&&(e=e.replace(t,function(e){return 0==e&&e||e+"%"})),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-perspective-origin: @process;
+  -moz-perspective-origin: @process;
+  perspective-origin: @process;
+}

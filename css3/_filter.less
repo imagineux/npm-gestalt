@@ -1,0 +1,13 @@
+// todo task to add version
+
+// TABLE OF MIXINS:
+	// filter
+
+
+.filter(...) {
+  @process: ~`(function(e){return e=e||"none",/^[^, ]*,/.test(e)&&(e=e.replace(/(?:,)(?![^(]*\))/g,"")),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-filter: @process;
+  -moz-filter: @process;
+  -ms-filter: @process;
+  filter: @process;
+}

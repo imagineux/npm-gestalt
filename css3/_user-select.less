@@ -1,0 +1,13 @@
+// todo task to add version
+
+// TABLE OF MIXINS:
+	// user-select
+
+	
+.user-select(...) {
+  @process: ~`(function(e){return e=e||"auto"})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-user-select: @process;
+  -moz-user-select: @process;
+  -ms-user-select: @process;
+  user-select: @process;
+}
