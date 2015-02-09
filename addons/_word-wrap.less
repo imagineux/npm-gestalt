@@ -1,0 +1,12 @@
+.wrap(@wrap: break-word) {
+  overflow-wrap: @wrap;
+  word-wrap: @wrap;
+  .process(@wrap) when (@wrap = break-word) {
+    word-break: break-all;
+  }
+  .process(@wrap) when not (@wrap = break-word) {
+    word-break: @wrap;
+  }
+  .process(@wrap);
+
+}
