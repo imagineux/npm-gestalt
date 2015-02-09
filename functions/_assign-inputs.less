@@ -1,0 +1,19 @@
+// create a function that assign inputs to a list for bulk styling
+// perhaps this should be done in js :)
+
+
+.assign-inputs(@inputs, @psuedo: null) {
+	@list: ();
+
+	.for(@inputs); .-each(@input) {
+		@input: escape(@input);
+		& when (@input = true) {
+    }
+	}
+}
+
+
+@all-text-inputs:        assign-inputs(@text-inputs-list);
+@all-text-inputs-active: assign-inputs(@text-inputs-list, active);
+@all-text-inputs-focus:  assign-inputs(@text-inputs-list, focus);
+@all-text-inputs-hover:  assign-inputs(@text-inputs-list, hover);
