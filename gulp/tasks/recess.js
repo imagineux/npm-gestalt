@@ -12,7 +12,7 @@ gulp.task('recess', function () {
 			noOverqualifying: true,
 			noUnderscores: false,
 			noUniversalSelectors: true,
-			zeroUnits: true
+			zeroUnits: false
         }))
         .pipe(recess.reporter())
 });
