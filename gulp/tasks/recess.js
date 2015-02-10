@@ -4,12 +4,17 @@ var gulp = require('gulp'),
 var cssSrc       = config.dest + "test.css";
  
 gulp.task('recess', function () {
-	console.log(cssSrc);
     return gulp.src(cssSrc)
-        .pipe(recess().on('error', function (err) {console.log(err);}))
-        .pipe(recess())
+        .pipe(recess({
+			strictPropertyOrder: false,
+			noIDs: true,
+			noJSPrefix: true,
+			noOverqualifying: true,
+			noUnderscores: false,
+			noUniversalSelectors: true,
+			zeroUnits: false
+        }))
         .pipe(recess.reporter())
-
         .pipe(gulp.dest(config.dest));
 });
 
