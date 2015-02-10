@@ -23,6 +23,7 @@
     "gulp": "^3.8.11",
     "gulp-less": "^2.0.1",
     "gulp-less-sourcemap": "^1.4.1",
+    "gulp-recess": "^1.1.1",
     "require-dir": "^0.1.0"
   }
 }
