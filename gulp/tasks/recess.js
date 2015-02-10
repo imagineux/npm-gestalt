@@ -15,7 +15,6 @@ gulp.task('recess', function () {
 			zeroUnits: true
         }))
         .pipe(recess.reporter())
-        .pipe(gulp.dest(config.dest));
 });
 
 gulp.task('default', ['recess', 'watch']);
