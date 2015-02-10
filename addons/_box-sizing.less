@@ -1,0 +1,11 @@
+// todo task to add version
+
+// TABLE OF MIXINS:
+	// box-sizing
+
+.box-sizing(...) {
+  @process: ~`(function(e){return e=e||"content-box"})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-box-sizing: @process;
+  -moz-box-sizing: @process;
+  box-sizing: @process;
+}
