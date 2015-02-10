@@ -667,3 +667,81 @@ width:calc(100% - 33px);
   -ms-user-select: none;
   user-select: none;
 }
+.addons_border-radius {
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+.addons_border-top-left-radius {
+  -webkit-border-top-left-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-topleft: 5px;
+  -moz-background-clip: padding;
+  border-top-left-radius: 5px;
+  background-clip: padding-box;
+}
+.addons_border-top-right-radius {
+  -webkit-border-top-right-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-topright: 5px;
+  -moz-background-clip: padding;
+  border-top-right-radius: 5px;
+  background-clip: padding-box;
+}
+.addons_border-bottom-left-radius {
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-background-clip: padding;
+  border-bottom-left-radius: 5px;
+  background-clip: padding-box;
+}
+.addons_border-bottom-right-radius {
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-bottomright: 5px;
+  -moz-background-clip: padding;
+  border-bottom-right-radius: 5px;
+  background-clip: padding-box;
+}
+.addons_clearfix {
+  *zoom: 1;
+}
+.addons_clearfix:before,
+.addons_clearfix:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+.addons_clearfix:after {
+  clear: both;
+}
+.addons_ellipsis {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.addons_hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+.addons_retina-images {
+  background-image: url("../images/gestalt-1x.jpeg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .addons_retina-images {
+    background-image: url("../images/gestalt-2x.jpeg");
+    background-size: 302px 167px;
+  }
+}
+.addons_size {
+  width: 12px;
+  height: 23em;
+}

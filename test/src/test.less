@@ -85,7 +85,27 @@
 }
 
 
+.addons {
+	&_border {
+		&-radius { .border-radius(5px); }
+		&-top-left-radius { .border-top-left-radius(5px); }
+		&-top-right-radius { .border-top-right-radius(5px); }
+		&-bottom-left-radius { .border-bottom-left-radius(5px); }
+		&-bottom-right-radius { .border-bottom-right-radius(5px); }
+	}
+	&_clearfix { .clearfix(); }
+	&_ellipsis { .ellipsis(); }
+	&_hide-text { .hide-text(); }
+	&_retina-images {
+		@width-1x: image-width("../images/gestalt-1x.jpeg");
+		@height-1x: image-height("../images/gestalt-1x.jpeg");
+		.retina-image("../images/gestalt-1x.jpeg", "../images/gestalt-2x.jpeg", @width-1x, @height-1x);
+	}
+	&_size { .size(12,23em); }
 
+
+
+}
 
 
 
