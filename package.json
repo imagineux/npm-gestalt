@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/imagineux/gestalt",
   "peerDependencies": {
-    "of-proximity": "0.1.0"
+    "normalize.css": "^3.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^2.0.1",
+    "gulp-less-sourcemap": "^1.4.1",
+    "require-dir": "^0.1.0"
   }
 }
