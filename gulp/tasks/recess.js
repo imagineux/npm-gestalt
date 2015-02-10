@@ -12,7 +12,7 @@ gulp.task('recess', function () {
 			noOverqualifying: true,
 			noUnderscores: false,
 			noUniversalSelectors: true,
-			zeroUnits: false
+			zeroUnits: true
         }))
         .pipe(recess.reporter())
         .pipe(gulp.dest(config.dest));
