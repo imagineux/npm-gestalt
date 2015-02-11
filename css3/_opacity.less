@@ -1,0 +1,10 @@
+// todo task to add version
+
+// TABLE OF MIXINS:
+	// Opacity
+	
+.opacity(@opacity) {
+  opacity: @opacity;
+  @opacity-ie: @opacity * 100;
+  filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}

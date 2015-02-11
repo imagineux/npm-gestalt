@@ -9,7 +9,3 @@ var config= require('../config');
 gulp.task('watch', ['setWatch'], function() {
   gulp.watch(config.test.src + "/**",   ['less']);
 });
-
-gulp.task('watch', ['setWatch'], function() {
-  gulp.watch(config.test.src + "/**",   ['recess']);
-});
