@@ -1,0 +1,44 @@
+.translate(...) {
+  @process: ~`(function(e){e=e||"0";var r=/\d/gi,t=/(?:\s|^)(\.?\d+\.?\d*)(?![^(]*\)|\w|%|\.)/gi;return r.test(e)&&(e=e.replace(t,function(e){return 0==e&&e||e+"px"})),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-transform: translate(@process);
+  -moz-transform: translate(@process);
+  -ms-transform: translate(@process);
+  -o-transform: translate(@process);
+  transform: translate(@process);
+}
+
+.translate3d(...) {
+  @process: ~`(function(e){e=e||"0, 0, 0";var r=/\d/gi,t=/(?:\s|^)(\.?\d+\.?\d*)(?![^(]*\)|\w|%|\.)/gi;return r.test(e)&&(e=e.replace(t,function(e){return 0==e&&e||e+"px"})),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-transform: translate3d(@process);
+  -moz-transform: translate3d(@process);
+  -ms-transform: translate3d(@process);
+  -o-transform: translate3d(@process);
+  transform: translate3d(@process);
+}
+
+.translateX(...) {
+  @process: ~`(function(e){e=e||"0";var r=/\d/gi,t=/(?:\s|^)(\.?\d+\.?\d*)(?![^(]*\)|\w|%|\.)/gi;return r.test(e)&&(e=e.replace(t,function(e){return 0==e&&e||e+"px"})),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-transform: translateX(@process);
+  -moz-transform: translateX(@process);
+  -ms-transform: translateX(@process);
+  -o-transform: translateX(@process);
+  transform: translateX(@process);
+}
+
+.translateY(...) {
+  @process: ~`(function(e){e=e||"0";var r=/\d/gi,t=/(?:\s|^)(\.?\d+\.?\d*)(?![^(]*\)|\w|%|\.)/gi;return r.test(e)&&(e=e.replace(t,function(e){return 0==e&&e||e+"px"})),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-transform: translateY(@process);
+  -moz-transform: translateY(@process);
+  -ms-transform: translateY(@process);
+  -o-transform: translateY(@process);
+  transform: translateY(@process);
+}
+
+.translateZ(...) {
+  @process: ~`(function(e){e=e||"0";var r=/\d/gi,t=/(?:\s|^)(\.?\d+\.?\d*)(?![^(]*\)|\w|%|\.)/gi;return r.test(e)&&(e=e.replace(t,function(e){return 0==e&&e||e+"px"})),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-transform: translateZ(@process);
+  -moz-transform: translateZ(@process);
+  -ms-transform: translateZ(@process);
+  -o-transform: translateZ(@process);
+  transform: translateZ(@process);
+}
